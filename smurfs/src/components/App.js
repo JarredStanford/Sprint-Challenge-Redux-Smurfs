@@ -11,9 +11,16 @@ import FormSmurf from "./FormSmurf";
 class App extends Component {
   render() {
     return (
-      <div>
-        <SmurfList />
-        <FormSmurf />
+      <div className="main-container">
+        <h1>Welcome to Smurfville</h1>
+        <img
+          src="https://www.bongfish.com/wp-content/uploads/2017/04/SV_header.jpg"
+          alt="Smurfville"
+        />
+        <div className="list-form">
+          <SmurfList />
+          <FormSmurf />
+        </div>
       </div>
     );
   }

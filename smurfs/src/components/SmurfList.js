@@ -9,9 +9,13 @@ class SmurfList extends React.Component {
   }
 
   render() {
-    return this.props.smurfs.map(smurf => {
-      return <Smurf smurf={smurf} key={smurf.id} />;
-    });
+    return (
+      <div className="list-container">
+        {this.props.smurfs.map(smurf => {
+          return <Smurf smurf={smurf} key={smurf.id} />;
+        })}
+      </div>
+    );
   }
 }
 

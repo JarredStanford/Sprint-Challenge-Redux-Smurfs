@@ -8,13 +8,16 @@ class Smurf extends React.Component {
     e.preventDefault();
     this.props.deleteSmurf(this.props.smurf.id);
   };
+
   render() {
     return (
-      <div>
+      <div className="smurf-card">
         <h1>{this.props.smurf.name}</h1>
         <h2>{this.props.smurf.age}</h2>
         <h2>{this.props.smurf.height}</h2>
-        <button onClick={this.removeSmurf}>Delete</button>
+        <button className="delete" onClick={this.removeSmurf}>
+          Delete
+        </button>
       </div>
     );
   }
