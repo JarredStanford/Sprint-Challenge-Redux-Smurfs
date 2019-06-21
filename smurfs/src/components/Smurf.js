@@ -6,9 +6,10 @@ class Smurf extends React.Component {
       <div>
         <h1>{this.props.smurf.name}</h1>
         <h2>{this.props.smurf.age}</h2>
-        <h2>{this.props.smurf.email}</h2>
+        <h2>{this.props.smurf.height}</h2>
       </div>
     );
   }
 }
+
 export default Smurf;

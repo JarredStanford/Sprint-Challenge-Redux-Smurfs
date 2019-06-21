@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import "./App.css";
 import SmurfList from "./SmurfList";
+import Smurfform from "./Smurfform";
 /*
  to wire this component up you're going to need a few things.
  I'll let you do this part on your own. 
@@ -9,7 +10,12 @@ import SmurfList from "./SmurfList";
  */
 class App extends Component {
   render() {
-    return <SmurfList />;
+    return (
+      <div>
+        <SmurfList />
+        <Smurfform />
+      </div>
+    );
   }
 }
 
