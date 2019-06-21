@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 
 class Smurf extends React.Component {
   render() {
@@ -12,4 +13,11 @@ class Smurf extends React.Component {
   }
 }
 
+Smurf.propTypes = {
+  smurf: PropTypes.shape({
+    name: PropTypes.string.isRequired,
+    age: PropTypes.number.isRequired,
+    height: PropTypes.string.isRequired
+  })
+};
 export default Smurf;

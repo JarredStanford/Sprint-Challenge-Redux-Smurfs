@@ -2,7 +2,7 @@ import React from "react";
 import { addSmurf } from "../actions";
 import { connect } from "react-redux";
 
-class Smurfform extends React.Component {
+class FormSmurf extends React.Component {
   state = {
     name: "",
     age: "",
@@ -67,4 +67,4 @@ const mapStateToProps = state => {
 export default connect(
   mapStateToProps,
   { addSmurf }
-)(Smurfform);
+)(FormSmurf);
