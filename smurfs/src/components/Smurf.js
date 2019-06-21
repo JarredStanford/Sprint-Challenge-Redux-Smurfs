@@ -13,7 +13,7 @@ class Smurf extends React.Component {
     return (
       <div className="smurf-card">
         <h1>{this.props.smurf.name}</h1>
-        <h2>{this.props.smurf.age}</h2>
+        <h2>{this.props.smurf.age} Years Old</h2>
         <h2>{this.props.smurf.height}</h2>
         <button className="delete" onClick={this.removeSmurf}>
           Delete
